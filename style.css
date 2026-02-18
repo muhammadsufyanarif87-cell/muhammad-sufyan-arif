@@ -1,0 +1,163 @@
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Backgrounds */
+.home-body, .login-body, .dashboard-body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Home Page */
+.home-container {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.main-title {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.primary-btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.primary-btn:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+/* Login Page */
+.login-container {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 350px;
+}
+
+.login-title {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff512f;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #dd2476;
+}
+
+.error-text {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Dashboard */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logout-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-section {
+    text-align: center;
+    margin-top: 100px;
+    animation: slideUp 1.5s ease;
+}
+
+.hero-title {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 32px;
+    color: #00eaff;
+}
+
+.developer-name {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffd700;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideUp {
+    from {opacity: 0; transform: translateY(80px);}
+    to {opacity: 1; transform: translateY(0);}
+}
